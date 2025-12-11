@@ -29,7 +29,7 @@ export function ArmoryList() {
                         placeholder="Search weapons..."
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        className="w-full md:w-80 bg-slate-900 border border-slate-700 text-slate-100 px-4 py-3 pl-10 rounded-sm focus:outline-none focus:border-amber-500 transition-colors uppercase font-mono text-sm"
+                        className="w-full md:w-80 bg-slate-900 border border-slate-700 text-slate-100 px-4 py-3 pl-10 rounded-sm focus:outline-none focus:border-cyan-400 transition-colors uppercase font-mono text-sm"
                     />
                     <Search className="absolute left-3 top-3.5 w-4 h-4 text-slate-500" />
                 </div>

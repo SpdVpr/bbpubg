@@ -2,7 +2,7 @@ export default function PrivacyPage() {
     return (
         <div className="container mx-auto px-4 py-12 max-w-4xl">
             <h1 className="font-display font-black text-4xl md:text-5xl text-slate-100 mb-8 uppercase">
-                Privacy <span className="text-amber-500">Policy</span>
+                Privacy <span className="text-cyan-500">Policy</span>
             </h1>
 
             <div className="prose prose-invert prose-lg max-w-none">

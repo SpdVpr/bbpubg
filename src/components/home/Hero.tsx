@@ -57,9 +57,9 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-500 text-xs font-mono font-bold uppercase tracking-widest mb-8"
+                    className="inline-block py-1 px-3 rounded-full border border-cyan-400/50 bg-cyan-400/10 text-cyan-400 text-xs font-bold tracking-[0.2em] uppercase mb-4 backdrop-blur-sm"
                 >
-                    <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                    <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
                     PUBG: Black Budget Info Hub
                 </motion.div>
 
@@ -67,10 +67,9 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
-                    className="font-display font-black text-6xl md:text-8xl lg:text-9xl tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-500 mb-6"
+                    className="font-display font-black text-6xl md:text-8xl lg:text-9xl text-white tracking-tighter shadow-xl drop-shadow-[0_0_15px_rgba(0,0,0,0.8)] mb-12"
                 >
-                    PUBG:<br />
-                    <span className="text-stroke-1 text-transparent bg-clip-text bg-gradient-to-b from-amber-500 to-amber-700">BLACK BUDGET</span>
+                    PUBG<span className="text-white">:</span><br /> <span className="text-cyan-400 glitch-text" data-text="Black Budget">Black Budget</span>
                 </motion.h1>
 
                 <motion.p
@@ -82,17 +81,17 @@ export function Hero() {
                     The next generation extraction shooter from Krafton is coming. <br />
                     Secure the loot, survive the zone, and escape with your life.
                 </motion.p>
-
+                {/* ... existing Current Status block ... */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                     className="mb-12"
                 >
-                    <div className="inline-flex flex-col items-center p-6 bg-slate-900/80 border border-amber-500/30 rounded-sm backdrop-blur-md">
-                        <span className="text-amber-500 text-sm font-bold tracking-[0.3em] uppercase mb-2">Current Status</span>
+                    <div className="inline-flex flex-col items-center p-6 bg-slate-900/80 border border-cyan-400/30 rounded-sm backdrop-blur-md">
+                        <span className="text-cyan-400 text-sm font-bold tracking-[0.3em] uppercase mb-2">Current Status</span>
                         <span className="text-4xl md:text-5xl font-display font-black text-white tracking-widest">
-                            ALPHA <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-200">LIVE</span>
+                            ALPHA <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-200">LIVE</span>
                         </span>
                         <span className="text-slate-400 text-sm font-mono mt-2">DECEMBER 2025 • PC STEAM</span>
                     </div>
@@ -105,14 +104,14 @@ export function Hero() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="flex flex-col sm:flex-row gap-4"
                 >
-                    <Link href="/armory" className="group relative px-8 py-4 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold uppercase tracking-widest transition-all clip-path-slant">
+                    <Link href="/armory" className="group relative px-8 py-4 bg-cyan-400 hover:bg-cyan-300 text-slate-900 font-bold uppercase tracking-widest text-sm transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(34,211,238,0.3)] hover:shadow-[0_0_30px_rgba(34,211,238,0.5)] clip-path-polygon overflow-hidden">
                         <span className="relative z-10 flex items-center gap-2">
                             Browse Armory <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </span>
                         <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                     </Link>
 
-                    <Link href="/news" className="group px-8 py-4 bg-transparent border border-white/10 hover:border-amber-500/50 text-slate-300 hover:text-white font-bold uppercase tracking-widest transition-all">
+                    <Link href="/news" className="group px-8 py-4 bg-transparent border border-white/10 hover:border-cyan-400/50 text-slate-300 hover:text-white font-bold uppercase tracking-widest transition-all">
                         <span className="flex items-center gap-2">
                             Latest Intel
                         </span>

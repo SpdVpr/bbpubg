@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${inter.variable} ${jetbrains.variable} ${oswald.variable} antialiased bg-slate-900 text-slate-100 min-h-screen selection:bg-amber-500/30 selection:text-amber-200 flex flex-col`}
+        className={`${inter.variable} ${jetbrains.variable} ${oswald.variable} antialiased bg-slate-900 text-slate-100 min-h-screen selection:bg-cyan-500/30 selection:text-cyan-200 flex flex-col`}
       >
         <Header />
         <main className="flex-grow pt-16">

@@ -6,7 +6,7 @@ export function ComingSoon({ title, description }: { title: string, description:
         <div className="min-h-[60vh] flex flex-col items-center justify-center text-center p-4">
             <div className="bg-slate-900/50 p-8 border border-slate-800 rounded-sm max-w-lg w-full flex flex-col items-center">
                 <div className="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center mb-6 border border-slate-700">
-                    <Lock className="w-8 h-8 text-amber-500" />
+                    <Lock className="w-8 h-8 text-cyan-500" />
                 </div>
 
                 <h1 className="font-display font-black text-3xl md:text-4xl text-slate-100 mb-4 uppercase tracking-wider">

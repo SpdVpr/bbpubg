@@ -43,8 +43,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
     return (
         <div className="container mx-auto px-4 py-12 max-w-4xl">
-            <Link href="/news" className="inline-flex items-center gap-2 text-slate-500 hover:text-amber-500 mb-8 transition-colors text-sm uppercase tracking-wider font-bold">
-                <ArrowLeft className="w-4 h-4" /> Back to Intelligence
+            <Link href="/news" className="inline-flex items-center text-slate-400 hover:text-cyan-400 transition-colors mb-8 group">
+                <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+                Back to Intel
             </Link>
 
             <article>
@@ -62,12 +63,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         {post.title}
                     </h1>
 
-                    <div className="flex flex-wrap items-center gap-6 text-slate-400 text-sm font-mono uppercase tracking-wider">
+                    <div className="flex items-center gap-4 text-sm text-slate-400 mb-6 font-mono border-l-2 border-cyan-500 pl-4 my-8">
                         <span className="flex items-center gap-2">
-                            <Calendar className="w-4 h-4 text-amber-500" /> {post.date}
+                            <Calendar className="w-4 h-4 text-cyan-500" /> {post.date}
                         </span>
                         <span className="flex items-center gap-2">
-                            <User className="w-4 h-4 text-amber-500" /> {post.author}
+                            <User className="w-4 h-4 text-cyan-500" /> {post.author}
                         </span>
                         <button className="ml-auto text-slate-500 hover:text-slate-300 flex items-center gap-2">
                             <Share2 className="w-4 h-4" /> Share

@@ -3,8 +3,8 @@ import { Mail, MessageSquare } from "lucide-react";
 export default function ContactPage() {
     return (
         <div className="container mx-auto px-4 py-12 max-w-4xl">
-            <h1 className="font-display font-black text-4xl md:text-5xl text-slate-100 mb-8 uppercase">
-                Contact <span className="text-amber-500">Intel</span>
+            <h1 className="font-display font-black text-4xl md:text-5xl text-slate-100 mb-4 uppercase tracking-tighter">
+                Secure <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">Line</span>
             </h1>
 
             <div className="grid md:grid-cols-2 gap-12">
@@ -18,27 +18,24 @@ export default function ContactPage() {
                     </p>
 
                     <div className="not-prose mt-12 space-y-6">
-                        <div className="flex items-start gap-4 p-6 bg-slate-900 border border-slate-800 rounded-sm">
-                            <Mail className="w-6 h-6 text-amber-500 mt-1" />
-                            <div>
-                                <h3 className="font-bold text-slate-100 text-lg uppercase mb-1">General Inquiries</h3>
-                                <p className="text-slate-400 mb-2">For partnership, feedback, or general questions.</p>
-                                <a href="mailto:michalvesecky@gmail.com" className="text-amber-500 font-bold hover:text-white transition-colors">
-                                    michalvesecky@gmail.com
-                                </a>
-                            </div>
+                        <div>
+                            <label htmlFor="email" className="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Secure Email</label>
+                            <input type="email" id="email" className="w-full bg-slate-900 border border-slate-700 text-slate-100 px-4 py-3 rounded-sm focus:outline-none focus:border-cyan-500 transition-colors" placeholder="operative@example.com" />
                         </div>
 
-                        <div className="flex items-start gap-4 p-6 bg-slate-900 border border-slate-800 rounded-sm">
-                            <MessageSquare className="w-6 h-6 text-amber-500 mt-1" />
-                            <div>
-                                <h3 className="font-bold text-slate-100 text-lg uppercase mb-1">Community Discord</h3>
-                                <p className="text-slate-400 mb-2">Join the conversation with other contractors.</p>
-                                <a href="https://discord.gg/TsnS3UAPgM" target="_blank" className="text-amber-500 font-bold hover:text-white transition-colors">
-                                    Join Server &rarr;
-                                </a>
-                            </div>
+                        <div>
+                            <label htmlFor="subject" className="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Subject</label>
+                            <input type="text" id="subject" className="w-full bg-slate-900 border border-slate-700 text-slate-100 px-4 py-3 rounded-sm focus:outline-none focus:border-cyan-500 transition-colors" placeholder="Intel Submission / Inquiry" />
                         </div>
+
+                        <div>
+                            <label htmlFor="message" className="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Transmission</label>
+                            <textarea id="message" rows={6} className="w-full bg-slate-900 border border-slate-700 text-slate-100 px-4 py-3 rounded-sm focus:outline-none focus:border-cyan-500 transition-colors" placeholder="Enter your message here..."></textarea>
+                        </div>
+
+                        <button type="submit" className="w-full py-4 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold uppercase tracking-widest transition-colors rounded-sm">
+                            Send Transmission
+                        </button>
                     </div>
                 </div>
 

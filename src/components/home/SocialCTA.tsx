@@ -2,8 +2,8 @@ import { Link as HomeLink, Twitter, Disc, Gamepad2, ArrowRight } from 'lucide-re
 
 export function SocialCTA() {
     return (
-        <section className="bg-amber-500 py-12 relative overflow-hidden group">
-            <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-500"></div>
+        <section className="bg-cyan-400 py-12 relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-cyan-400"></div>
 
             {/* Texture */}
             <div className="absolute inset-0 bg-[url('https://pubg.com/en/assets/images/bg_texture_black.webp')] bg-cover opacity-10 mix-blend-multiply"></div>
@@ -50,8 +50,8 @@ function SocialButton({ href, icon: Icon, label, primary }: { href: string, icon
             target="_blank"
             rel="noopener noreferrer"
             className={`flex items-center gap-2 px-6 py-4 rounded-sm font-bold uppercase tracking-wider transition-all transform hover:-translate-y-1 shadow-lg ${primary
-                    ? 'bg-slate-900 text-white hover:bg-slate-800'
-                    : 'bg-white text-slate-900 hover:bg-slate-100'
+                ? 'bg-slate-900 text-white hover:bg-slate-800'
+                : 'bg-white text-slate-900 hover:bg-slate-100'
                 }`}
         >
             <Icon className="w-5 h-5" />

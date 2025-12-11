@@ -4,11 +4,14 @@ import { Users, Database, Shield } from "lucide-react";
 export default function AboutPage() {
     return (
         <div className="container mx-auto px-4 py-12 max-w-4xl">
-            <h1 className="font-display font-black text-4xl md:text-5xl text-slate-100 mb-8 uppercase">
-                About <span className="text-amber-500">BB:PUBG</span>
+            <h1 className="font-display font-black text-4xl md:text-5xl text-slate-100 mb-4 uppercase tracking-tighter">
+                About the <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">Network</span>
             </h1>
 
-            <div className="prose prose-invert prose-lg max-w-none">
+            <div className="prose prose-invert prose-slate max-w-none prose-lg">
+                <p className="lead border-l-4 border-cyan-500 pl-6 italic text-slate-300">
+                    BB:PUBG Intel is an UNOFFICIAL community hub. We are not employed by, affiliated with, or sponsored by Krafton, Inc. or PUBG Studios.
+                </p>
                 <p className="text-xl text-slate-300 leading-relaxed font-light">
                     <strong>PUBG: Black Budget Intel</strong> (bbpubg.com) is the premier unofficial community hub dedicated to Krafton's upcoming extraction shooter, <em>Project Black Budget</em>.
                 </p>

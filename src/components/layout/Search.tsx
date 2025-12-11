@@ -71,7 +71,7 @@ export function Search() {
         <>
             <button
                 onClick={() => setIsOpen(true)}
-                className="p-2 text-slate-400 hover:text-amber-500 hover:bg-slate-800 rounded-md transition-colors"
+                className="p-2 text-slate-400 hover:text-cyan-400 hover:bg-slate-800 rounded-md transition-colors"
             >
                 <SearchIcon className="w-5 h-5" />
             </button>
@@ -83,10 +83,10 @@ export function Search() {
                             initial={{ opacity: 0, scale: 0.95, y: -20 }}
                             animate={{ opacity: 1, scale: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.95, y: -20 }}
-                            className="w-full max-w-2xl bg-slate-900 border border-amber-500/30 shadow-2xl rounded-lg overflow-hidden flex flex-col"
+                            className="w-full max-w-2xl bg-slate-900 border border-cyan-400/30 shadow-2xl rounded-lg overflow-hidden flex flex-col"
                         >
                             <div className="flex items-center p-4 border-b border-white/5">
-                                <SearchIcon className="w-5 h-5 text-amber-500 mr-3" />
+                                <SearchIcon className="w-5 h-5 text-cyan-400 mr-3" />
                                 <input
                                     ref={inputRef}
                                     type="text"
@@ -121,17 +121,17 @@ export function Search() {
                                     >
                                         <div className="flex items-center gap-3">
                                             <span className={`text-[10px] font-mono uppercase px-1.5 py-0.5 rounded border ${result.type === 'weapon' ? 'bg-orange-500/10 text-orange-500 border-orange-500/20' :
-                                                    'bg-blue-500/10 text-blue-500 border-blue-500/20'
+                                                'bg-blue-500/10 text-blue-500 border-blue-500/20'
                                                 }`}>
                                                 {result.type}
                                             </span>
-                                            <span className="font-bold text-slate-200 group-hover:text-amber-500 transition-colors">
+                                            <span className="font-bold text-slate-200 group-hover:text-cyan-400 transition-colors">
                                                 {result.title}
                                             </span>
                                         </div>
                                         <div className="flex items-center gap-3">
                                             <span className="text-xs text-slate-500 font-mono hidden sm:inline-block">{result.meta}</span>
-                                            <ArrowRight className="w-4 h-4 text-slate-600 group-hover:text-amber-500 -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all" />
+                                            <ArrowRight className="w-4 h-4 text-slate-600 group-hover:text-cyan-400 -translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all" />
                                         </div>
                                     </button>
                                 ))}

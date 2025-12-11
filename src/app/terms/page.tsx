@@ -2,7 +2,7 @@ export default function TermsPage() {
     return (
         <div className="container mx-auto px-4 py-12 max-w-4xl">
             <h1 className="font-display font-black text-4xl md:text-5xl text-slate-100 mb-8 uppercase">
-                Terms of <span className="text-amber-500">Service</span>
+                Terms of <span className="text-cyan-500">Service</span>
             </h1>
 
             <div className="prose prose-invert prose-lg max-w-none">

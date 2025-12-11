@@ -19,8 +19,8 @@ export default function GameInfoPage() {
                 <div className="absolute inset-0 bg-[url('/images/ss_b48340d5a275e5dbafb9e93007002584efec5588.1920x1080.jpg')] bg-cover bg-center opacity-30"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent"></div>
                 <div className="container relative z-10 px-4 text-center">
-                    <h1 className="font-display font-black text-5xl md:text-7xl text-white mb-4">
-                        GAME <span className="text-amber-500">INFO</span>
+                    <h1 className="font-display font-black text-4xl md:text-5xl text-slate-100 mb-4 uppercase tracking-tighter">
+                        Mission <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">Briefing</span>
                     </h1>
                     <p className="text-slate-400 text-lg max-w-2xl mx-auto">
                         Everything we know about PUBG: Black Budget. Alpha tests, features, and system requirements.
@@ -31,21 +31,21 @@ export default function GameInfoPage() {
             <div className="container mx-auto px-4 py-12 space-y-20">
 
                 {/* ALPHA TEST ALERT */}
-                <div className="bg-amber-500/10 border border-amber-500/20 p-8 rounded-sm relative overflow-hidden">
+                <div className="bg-cyan-500/10 border border-cyan-500/20 p-8 rounded-sm relative overflow-hidden">
                     <div className="absolute top-0 right-0 p-4 opacity-10">
-                        <AlertTriangle className="w-32 h-32 text-amber-500" />
+                        <AlertTriangle className="w-32 h-32 text-cyan-500" />
                     </div>
 
                     <div className="relative z-10">
                         <div className="flex items-center gap-3 mb-4">
                             <span className="w-3 h-3 bg-red-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(239,68,68,0.5)]"></span>
-                            <h2 className="font-display font-bold text-2xl text-amber-500 uppercase tracking-widest">Closed Alpha Test - December 2025</h2>
+                            <h2 className="font-display font-bold text-2xl text-cyan-500 uppercase tracking-widest">Closed Alpha Test - December 2025</h2>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-8 text-slate-300">
                             <div className="space-y-4">
                                 <p>The test will be held for <strong className="text-white">PC (Steam)</strong> players across North America, Europe, and Asia.</p>
-                                <ul className="list-disc list-inside space-y-1 text-slate-400 marker:text-amber-500">
+                                <ul className="list-disc list-inside space-y-1 text-slate-400 marker:text-cyan-500">
                                     <li>Supported Languages: Russian, English, Chinese, Korean</li>
                                     <li>Mode: <strong className="text-white">FPP Only</strong></li>
                                     <li>Access: Apply via Steam Store Page or Watch Twitch/Chzzk Drops</li>
@@ -53,7 +53,7 @@ export default function GameInfoPage() {
                             </div>
                             <div className="flex flex-col justify-center items-start border-l border-white/10 pl-8">
                                 <p className="text-sm text-slate-400 italic mb-4">"As this is an Alpha test, players may encounter various technical issues."</p>
-                                <a href="#" className="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-6 py-3 uppercase tracking-widest rounded-sm transition-colors">
+                                <a href="#" className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold px-6 py-3 uppercase tracking-widest rounded-sm transition-colors">
                                     Apply on Steam
                                 </a>
                             </div>
@@ -64,7 +64,7 @@ export default function GameInfoPage() {
                 {/* ABOUT SECTION */}
                 <section className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
-                        <h3 className="font-display font-bold text-3xl text-slate-100 uppercase tracking-widest border-l-4 border-amber-500 pl-4">
+                        <h3 className="font-display font-bold text-3xl text-slate-100 uppercase tracking-widest border-l-4 border-cyan-500 pl-4">
                             The Anomaly Loop
                         </h3>
                         <div className="prose prose-invert prose-lg text-slate-400">
@@ -143,7 +143,7 @@ export default function GameInfoPage() {
                             "PvPvE combat with hostile AI factions"
                         ].map((item, i) => (
                             <li key={i} className="flex items-start gap-2 text-slate-400">
-                                <span className="mt-1.5 w-1.5 h-1.5 bg-amber-500 rounded-full shrink-0"></span>
+                                <span className="mt-1.5 w-1.5 h-1.5 bg-cyan-500 rounded-full shrink-0"></span>
                                 {item}
                             </li>
                         ))}

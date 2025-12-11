@@ -45,7 +45,7 @@ export const posts: Post[] = [
             <p><strong>2. Twitch/Chzzk Drops:</strong> Watch approved streamers. Important: Link your Krafton ID first!</p>
 
             <h3>Gameplay Tips</h3>
-            <p>Check the <a href="#" class="text-amber-500">Gameplay Tips</a> channel in Discord for:</p>
+            <p>Check the <a href="#" class="text-cyan-400">Gameplay Tips</a> channel in Discord for:</p>
             <ul>
                 <li>Beginner's Guide</li>
                 <li>Combat Tips and Strategies</li>

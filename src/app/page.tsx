@@ -18,8 +18,8 @@ export default function Home() {
       <Hero />
       <TrailerSection />
       <div className="container mx-auto px-4 py-8">
-        <h2 className="font-display font-black text-3xl text-slate-100 mb-6 uppercase tracking-wider border-l-4 border-amber-500 pl-4">
-          Frontline <span className="text-amber-500">Intel</span>
+        <h2 className="font-display font-black text-3xl text-slate-100 mb-6 uppercase tracking-wider border-l-4 border-cyan-400 pl-4">
+          Frontline <span className="text-cyan-400">Intel</span>
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {posts.slice(0, 9).map((post) => (

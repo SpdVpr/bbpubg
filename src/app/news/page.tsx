@@ -5,17 +5,17 @@ import Link from 'next/link';
 export default function NewsPage() {
     return (
         <div className="container mx-auto px-4 py-12">
-            <h1 className="font-display font-black text-4xl md:text-5xl text-slate-100 mb-8">
-                THE WIRE <span className="text-amber-500">INTEL FEED</span>
+            <h1 className="font-display font-black text-4xl md:text-5xl text-slate-100 mb-4 uppercase tracking-tighter">
+                The <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">Wire</span>
             </h1>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {posts.map((post) => (
-                    <article key={post.slug} className="bg-slate-900 border border-slate-800 hover:border-amber-500/50 transition-colors p-6 rounded-sm group flex flex-col h-full">
+                    <article key={post.slug} className="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-colors p-6 rounded-sm group flex flex-col h-full">
                         <div className="flex justify-between items-start mb-4">
                             <span className={`text-xs font-mono uppercase px-2 py-1 rounded border ${post.category === 'Official' ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' :
-                                    post.category === 'Leak' ? 'bg-red-500/10 text-red-500 border-red-500/20' :
-                                        'bg-slate-800 text-slate-400 border-slate-700'
+                                post.category === 'Leak' ? 'bg-red-500/10 text-red-500 border-red-500/20' :
+                                    'bg-slate-800 text-slate-400 border-slate-700'
                                 }`}>
                                 {post.category}
                             </span>

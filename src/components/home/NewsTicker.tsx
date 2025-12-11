@@ -21,8 +21,9 @@ export function NewsTicker() {
                 {[...newsItems, ...newsItems].map((item, index) => (
                     <div key={index} className="flex items-center gap-4 text-sm font-mono text-slate-400">
                         <span className="text-amber-500/50">///</span>
-                        <span className="hover:text-amber-500 cursor-default transition-colors">{item}</span>
-                    </div>
+                        <div className="bg-cyan-500 text-slate-900 px-3 py-1 font-bold text-xs uppercase tracking-widest shrink-0">
+                            Latest Intel
+                        </div></div>
                 ))}
             </div>
         </div>

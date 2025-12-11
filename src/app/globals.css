@@ -36,13 +36,13 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f59e0b;
+  background: #22d3ee;
 }
 
 /* News Article Styling */
 .prose h2,
 .prose h3 {
-  @apply font-display font-bold uppercase tracking-wider text-slate-100 mt-12 mb-6 border-l-4 border-amber-500 pl-4;
+  @apply font-display font-bold uppercase tracking-wider text-slate-100 mt-12 mb-6 border-l-4 border-cyan-500 pl-4;
 }
 
 .prose p {
@@ -50,7 +50,7 @@
 }
 
 .prose ul {
-  @apply list-disc list-inside space-y-2 mb-8 text-slate-400 marker:text-amber-500;
+  @apply list-disc list-inside space-y-2 mb-8 text-slate-400 marker:text-cyan-400;
 }
 
 .prose strong {
@@ -58,7 +58,7 @@
 }
 
 .prose a {
-  @apply text-amber-500 hover:text-amber-400 hover:underline transition-colors;
+  @apply text-cyan-400 hover:text-cyan-300 hover:underline transition-colors;
 }
 
 .prose hr {
@@ -87,4 +87,92 @@
 /* Clip Paths */
 .clip-path-slant {
   clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+.clip-path-polygon {
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+/* Glitch Text Effect */
+.glitch-text {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f172a;
+  /* Match background color to hide main text partially */
+}
+
+.glitch-text::before {
+  left: 2px;
+  text-shadow: -1px 0 #00ffff;
+  clip-path: inset(44% 0 61% 0);
+  animation: glitch-anim-1 2.5s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+  left: -2px;
+  text-shadow: -1px 0 #ff00ff;
+  clip-path: inset(20% 0 44% 0);
+  animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+  0% {
+    clip-path: inset(20% 0 80% 0);
+  }
+
+  20% {
+    clip-path: inset(60% 0 10% 0);
+  }
+
+  40% {
+    clip-path: inset(40% 0 50% 0);
+  }
+
+  60% {
+    clip-path: inset(80% 0 5% 0);
+  }
+
+  80% {
+    clip-path: inset(10% 0 70% 0);
+  }
+
+  100% {
+    clip-path: inset(30% 0 20% 0);
+  }
+}
+
+@keyframes glitch-anim-2 {
+  0% {
+    clip-path: inset(10% 0 60% 0);
+  }
+
+  20% {
+    clip-path: inset(30% 0 10% 0);
+  }
+
+  40% {
+    clip-path: inset(80% 0 5% 0);
+  }
+
+  60% {
+    clip-path: inset(10% 0 90% 0);
+  }
+
+  80% {
+    clip-path: inset(50% 0 20% 0);
+  }
+
+  100% {
+    clip-path: inset(0% 0 40% 0);
+  }
 }

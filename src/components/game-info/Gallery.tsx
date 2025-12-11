@@ -33,7 +33,7 @@ export function Gallery() {
                     <motion.div
                         key={idx}
                         whileHover={{ scale: 1.05 }}
-                        className="aspect-video relative rounded-sm overflow-hidden border border-slate-800 cursor-pointer"
+                        className="aspect-video relative rounded-sm overflow-hidden border border-slate-800 cursor-pointer group"
                         onClick={() => setSelected(src)}
                     >
                         <Image
@@ -42,6 +42,10 @@ export function Gallery() {
                             fill
                             className="object-cover hover:opacity-80 transition-opacity"
                         />
+                        <div className="absolute inset-0 bg-cyan-500/0 group-hover:bg-cyan-500/10 transition-colors duration-300"></div>
+                        <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent">
+                            <p className="text-cyan-400 font-mono text-sm uppercase tracking-wider">Screenshot {idx + 1}</p>
+                        </div>
                     </motion.div>
                 ))}
             </div>
