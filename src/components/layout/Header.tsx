@@ -1,0 +1,72 @@
+'use client';
+
+import Link from 'next/link';
+import { Menu, Search as SearchIcon, X } from 'lucide-react';
+import { useState } from 'react';
+import { cn } from '@/lib/utils';
+import { Search } from './Search';
+
+export function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    return (
+        <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/5">
+            <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+                {/* Logo */}
+                <Link href="/" className="flex items-center gap-2 group">
+                    <div className="w-8 h-8 bg-amber-500 rounded-sm flex items-center justify-center font-bold text-slate-900 text-lg">
+                        BB
+                    </div>
+                    <span className="font-display font-bold text-lg md:text-xl tracking-wider text-slate-100 group-hover:text-amber-500 transition-colors">
+                        PUBG<span className="text-amber-500">:</span> BLACK BUDGET
+                    </span>
+                </Link>
+
+                {/* Desktop Nav */}
+                <nav className="hidden md:flex items-center gap-8">
+                    <Link href="/game-info" className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors uppercase tracking-widest">
+                        Game Info
+                    </Link>
+                    <Link href="/armory" className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors uppercase tracking-widest">
+                        The Armory
+                    </Link>
+                    <Link href="/intel" className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors uppercase tracking-widest">
+                        Intel Map
+                    </Link>
+                    <Link href="/loadout" className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors uppercase tracking-widest">
+                        Theorycraft
+                    </Link>
+                    <Link href="/news" className="text-sm font-medium text-slate-300 hover:text-amber-500 transition-colors uppercase tracking-widest">
+                        The Wire
+                    </Link>
+                </nav>
+
+                {/* Actions */}
+                <div className="hidden md:flex items-center gap-4">
+                    <Search />
+                </div>
+
+                {/* Mobile Menu Toggle */}
+                <button
+                    className="md:hidden p-2 text-slate-200"
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                    {isMenuOpen ? <X /> : <Menu />}
+                </button>
+            </div>
+
+            {/* Mobile Nav */}
+            <div className={cn(
+                "md:hidden absolute top-16 left-0 right-0 bg-slate-900 border-b border-slate-800 transition-all duration-300 overflow-hidden",
+                isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+            )}>
+                <nav className="flex flex-col p-4 gap-4">
+                    <Link href="/armory" className="p-2 text-slate-300 hover:text-amber-500 hover:bg-slate-800 rounded">The Armory</Link>
+                    <Link href="/intel" className="p-2 text-slate-300 hover:text-amber-500 hover:bg-slate-800 rounded">Intel Map</Link>
+                    <Link href="/loadout" className="p-2 text-slate-300 hover:text-amber-500 hover:bg-slate-800 rounded">Theorycraft</Link>
+                    <Link href="/news" className="p-2 text-slate-300 hover:text-amber-500 hover:bg-slate-800 rounded">The Wire</Link>
+                </nav>
+            </div>
+        </header>
+    );
+}
