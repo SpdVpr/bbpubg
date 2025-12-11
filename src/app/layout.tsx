@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono, Oswald } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
@@ -40,6 +41,21 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrains.variable} ${oswald.variable} antialiased bg-slate-900 text-slate-100 min-h-screen selection:bg-cyan-500/30 selection:text-cyan-200 flex flex-col`}
       >
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-TYMYC4K3H0"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-TYMYC4K3H0');
+          `}
+        </Script>
+
         <Header />
         <main className="flex-grow pt-16">
           {children}
