@@ -10,6 +10,41 @@ export interface Post {
 
 export const posts: Post[] = [
     {
+        slug: "closed-alpha-test-begins",
+        title: "PUBG: Black Budget Closed Alpha Test Begins Today",
+        excerpt: "The long wait is over. Coli Island awaits. Check the schedule, participation details, and join the extraction.",
+        date: "2025-12-12",
+        category: "Official",
+        author: "TecK",
+        content: `
+            <img src="/images/PBB_Screenshot_04.png" alt="PUBG Black Budget Alpha Test" class="w-full rounded-sm border border-slate-800 mb-8" />
+            <p><strong>Hello @everyone!</strong></p>
+            <p>The long wait is finally over — the <strong>PUBG: Black Budget Closed Alpha Test</strong> begins today, in just a few moments!</p>
+            <p>You’ve heard the name whispered across the community — <strong>Coli Island</strong>. Now it’s your turn to step into that world for the very first time. The secrets buried deep within the island await your discovery.</p>
+            
+            <h3>Test Schedule</h3>
+            <ul>
+                <li><strong>Week 1:</strong> December 12, 01:00 ~ December 14, 23:59 PST</li>
+                <li><strong>Week 2:</strong> December 19, 01:00 ~ December 22, 23:59 PST</li>
+            </ul>
+            <p><em>Raids will be accessible until 1 hour before the session ends; after that, only the Hideout will remain available.</em></p>
+
+            <h3>How to Participate</h3>
+            <p>Players who applied for “Request Access” on the Steam Store page are being granted access in waves. Check your Steam Library or registered email to see if you’ve been selected.</p>
+
+            <h3>Notes</h3>
+            <ul>
+                <li>This build is an Alpha version, so technical issues may occur.</li>
+                <li>If you encounter any bugs or errors, please report them via the official Discord channel.</li>
+                <li>Make sure to review the minimum and recommended system requirements for a smoother experience.</li>
+            </ul>
+
+            <p>The Closed Alpha is <strong>NDA-free</strong>, meaning you can freely stream, record, and share your moments, from intense firefights to tense extractions and everything in between.</p>
+
+            <p>Now, we will see you soon on Coli Island.</p>
+        `
+    },
+    {
         slug: "drops-notice-campaign",
         title: "PUBG: Black Budget Drops Notice",
         excerpt: "Important info regarding the Drops campaign. Codes reset daily at 16:00.",

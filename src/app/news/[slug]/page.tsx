@@ -51,7 +51,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <article>
                 <header className="mb-12 border-b border-white/5 pb-12">
                     <div className="flex gap-4 mb-6">
-                        <span className={`text-xs font-mono uppercase px-2 py-1 rounded border ${post.category === 'Official' ? 'bg-blue-500/10 text-blue-500 border-blue-500/20' :
+                        <span className={`text-xs font-mono uppercase px-2 py-1 rounded border ${post.category === 'Official' ? 'bg-amber-500/10 text-amber-500 border-amber-500/20' :
                             post.category === 'Leak' ? 'bg-red-500/10 text-red-500 border-red-500/20' :
                                 'bg-slate-800 text-slate-400 border-slate-700'
                             }`}>
