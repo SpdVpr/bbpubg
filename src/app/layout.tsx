@@ -23,11 +23,20 @@ export const metadata: Metadata = {
     siteName: 'BB:PUBG Intel',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: 'https://bbpubg.com/images/social.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'PUBG: Black Budget Intel',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'PUBG: Black Budget Intel',
     description: "The #1 community hub for PUBG: Black Budget. Leaks, guides, and more.",
+    images: ['https://bbpubg.com/images/social.jpg'],
   },
 };
 
