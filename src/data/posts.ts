@@ -10,6 +10,24 @@ export interface Post {
 
 export const posts: Post[] = [
     {
+        slug: "drops-changes-announcement",
+        title: "PUBG: Black Budget Announcement on Drops Changes",
+        excerpt: "We are announcing a change in the way Twitch Drops are conducted to help you receive rewards more smoothly.",
+        date: "2025-12-13",
+        category: "Official",
+        author: "PUBG Team",
+        content: `
+            <p><strong>Hello, this is the PUBG: Black Budget team.</strong></p>
+            <p>Thank you for your support for Drops, and to help you receive rewards more smoothly, we are announcing a change in the way Twitch Drops are conducted as follows.</p>
+
+            <h3>Twitch Drops mechanics will be changed as below:</h3>
+            <ul>
+                <li>07:00 PST reset will be removed.</li>
+                <li>During the first week test period, the Drops reward quantity will be reset daily at 04:00a, 11:00a, 22:00p PST (Pacific Standard Time).</li>
+            </ul>
+        `
+    },
+    {
         slug: "closed-alpha-test-begins",
         title: "PUBG: Black Budget Closed Alpha Test Begins Today",
         excerpt: "The long wait is over. Coli Island awaits. Check the schedule, participation details, and join the extraction.",
