@@ -20,7 +20,7 @@ export default function ThreadListItem({ thread }: ThreadListItemProps) {
         if ((e.target as HTMLElement).closest('button') || (e.target as HTMLElement).closest('a')) {
             return;
         }
-        router.push(`/forum/thread/${thread.id}`);
+        router.push(`/forum/thread/${thread.slug || thread.id}`);
     };
 
     return (
@@ -46,7 +46,7 @@ export default function ThreadListItem({ thread }: ThreadListItemProps) {
                     {thread.isPinned && <Pin className="w-4 h-4 text-cyan-400 fill-cyan-400/20" />}
                     {thread.isLocked && <Lock className="w-4 h-4 text-red-400" />}
 
-                    <Link href={`/forum/thread/${thread.id}`} className="text-lg font-medium text-gray-200 group-hover:text-cyan-400 transition-colors truncate block">
+                    <Link href={`/forum/thread/${thread.slug || thread.id}`} className="text-lg font-medium text-gray-200 group-hover:text-cyan-400 transition-colors truncate block">
                         {thread.title}
                     </Link>
                 </div>

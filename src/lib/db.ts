@@ -209,10 +209,24 @@ function slugify(text: string) {
 export async function createThread(categoryId: string, title: string, content: string, user: UserProfile) {
     const threadRef = doc(collection(db, "threads"));
 
-    // Generate unique slug: title-slug + random 6 chars
+    // Generate base slug
     const baseSlug = slugify(title);
-    const uniqueSuffix = Math.random().toString(36).substring(2, 8);
-    const slug = `${baseSlug}-${uniqueSuffix}`;
+    let slug = baseSlug;
+    let counter = 1;
+
+    // Check availability loop
+    // Ideally this should be a transaction or function but for now we loop
+    // Since firestore doesn't enforce unique constraint on field easily without a unique index doc
+    // We will do a best-effort check.
+    while (true) {
+        const q = query(collection(db, "threads"), where("slug", "==", slug));
+        const existing = await getDocs(q);
+        if (existing.empty) break;
+
+        // If conflict, append counter
+        slug = `${baseSlug}-${counter}`;
+        counter++;
+    }
 
     const newThread: Omit<ForumThread, "id"> = {
         categoryId,
