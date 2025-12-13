@@ -6,6 +6,7 @@ import { Menu, Search as SearchIcon, X } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Search } from './Search';
+import UserProfile from '../auth/UserProfile';
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,11 +42,15 @@ export function Header() {
                     <Link href="/news" className="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors uppercase tracking-widest">
                         The Wire
                     </Link>
+                    <Link href="/forum" className="text-sm font-bold text-cyan-400 border border-cyan-500/80 px-4 py-1.5 rounded hover:bg-cyan-500 hover:text-white transition-all transform hover:scale-105 uppercase tracking-widest shadow-[0_0_10px_rgba(6,182,212,0.2)]">
+                        Forum
+                    </Link>
                 </nav>
 
                 {/* Actions */}
                 <div className="hidden md:flex items-center gap-4">
                     <Search />
+                    <UserProfile />
                 </div>
 
                 {/* Mobile Menu Toggle */}
@@ -67,6 +72,9 @@ export function Header() {
                     <Link href="/intel" className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded">Intel Map</Link>
                     <Link href="/loadout" className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded">Theorycraft</Link>
                     <Link href="/news" className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded">The Wire</Link>
+                    <Link href="/forum" className="p-2 text-cyan-400 font-bold hover:text-white hover:bg-slate-800 rounded flex items-center gap-2">
+                        Forum <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    </Link>
                 </nav>
             </div>
         </header>
