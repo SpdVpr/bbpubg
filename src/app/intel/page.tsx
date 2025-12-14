@@ -16,8 +16,8 @@ export default function IntelPage() {
                 <p className="text-gray-400 max-w-2xl">
                     Detailed tactical overview of the exclusion zone. Use filters to locate potential extraction points and high-value targets.
                     <span className="text-yellow-500 block mt-4 p-3 bg-yellow-500/10 border border-yellow-500/20 rounded text-sm">
-                        <strong className="uppercase block mb-1">Status Update:</strong>
-                        Official high-resolution map data is currently <strong className="text-yellow-400">unavailable</strong>. The current display is a placeholder simulation. As soon as official intel or reliable leaks are available, this map will be immediately updated with accurate topography and POIs.
+                        <strong className="uppercase block mb-1">WORK IN PROGRESS:</strong>
+                        Official high-resolution satellite imagery is currently <strong>offline</strong>. The data below is a reconstruction based on field operative reports. We are actively compiling full map data and will update this system as soon as secure intel becomes available.
                     </span>
                 </p>
             </div>

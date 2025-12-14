@@ -10,6 +10,46 @@ export interface Post {
 
 export const posts: Post[] = [
     {
+        slug: "compensation-apology-notice",
+        title: "Compensation & Apology Notice regarding Test Issues",
+        excerpt: "We sincerely apologize for recent authorized program issues and server instability. Compensation details inside.",
+        date: "2025-12-14",
+        category: "Official",
+        author: "PUBG Team",
+        content: `
+            <p><strong>Hello @Contractor,</strong></p>
+            <p>We sincerely apologize for the inconvenience caused by recent issues, including unauthorized programs, temporary maintenance, and crashes, which have disrupted normal test participation and overall gameplay experience.</p>
+            <p>Although we have issued several notices and apologies, we understand that these messages alone do not fully address the frustration and disruptions you have experienced.</p>
+
+            <h3>Action Against unauthorized Programs</h3>
+            <p>The impact of unauthorized programs, in particular, has significantly undermined the gameplay environment, and we take this matter extremely seriously.</p>
+            <p>To ensure a fair testing environment, we have strengthened our enforcement criteria and procedures, and these enhanced measures are now being applied immediately to deliver faster and more decisive actions against the use of unauthorized programs.</p>
+
+            <h3>Compensation Details</h3>
+            <p>To address the inconvenience experienced during gameplay, we have prepared compensation. Please refer to the details below.</p>
+            
+            <ul>
+                <li><strong>Target:</strong> Players who have created in-game accounts before the Distribution Time</li>
+                <li><strong>Distribution Time:</strong> 14. prosince 2025 11:00</li>
+                <li><strong>Note:</strong> The rewards will be distributed sequentially</li>
+            </ul>
+
+            <div class="bg-yellow-500/10 border border-yellow-500/30 p-4 rounded-lg my-6">
+                <h4 class="text-yellow-400 font-bold uppercase mb-2">Rewards Package</h4>
+                <ul class="space-y-1 text-slate-300">
+                    <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> Currency: <strong>50,000</strong></li>
+                    <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> Clearance Level 1 Key: <strong>5x</strong></li>
+                    <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> Clearance Level 2 Key: <strong>5x</strong></li>
+                    <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> Clearance Level 3 Key: <strong>5x</strong></li>
+                    <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> Clearance Level 4 Key: <strong>3x</strong></li>
+                </ul>
+            </div>
+
+            <p>We will continue working to improve and deliver a more stable and enjoyable gameplay experience.</p>
+            <p>Thank you.</p>
+        `
+    },
+    {
         slug: "drops-changes-announcement",
         title: "PUBG: Black Budget Announcement on Drops Changes",
         excerpt: "We are announcing a change in the way Twitch Drops are conducted to help you receive rewards more smoothly.",

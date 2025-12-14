@@ -180,3 +180,25 @@
     clip-path: inset(0% 0 40% 0);
   }
 }
+
+/* Leaflet Overrides */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: inherit !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+}
+
+.leaflet-container {
+  font-family: var(--font-inter) !important;
+  background: #050505 !important;
+}
+
+.custom-marker-icon {
+  background: transparent !important;
+  border: none !important;
+}

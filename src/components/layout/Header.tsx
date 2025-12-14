@@ -68,11 +68,12 @@ export function Header() {
                 isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
             )}>
                 <nav className="flex flex-col p-4 gap-4">
-                    <Link href="/armory" className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded">The Armory</Link>
-                    <Link href="/intel" className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded">Intel Map</Link>
-                    <Link href="/loadout" className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded">Theorycraft</Link>
-                    <Link href="/news" className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded">The Wire</Link>
-                    <Link href="/forum" className="p-2 text-cyan-400 font-bold hover:text-white hover:bg-slate-800 rounded flex items-center gap-2">
+                    <Link href="/game-info" onClick={() => setIsMenuOpen(false)} className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded">Game Info</Link>
+                    <Link href="/armory" onClick={() => setIsMenuOpen(false)} className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded">The Armory</Link>
+                    <Link href="/intel" onClick={() => setIsMenuOpen(false)} className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded">Intel Map</Link>
+                    <Link href="/loadout" onClick={() => setIsMenuOpen(false)} className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded">Theorycraft</Link>
+                    <Link href="/news" onClick={() => setIsMenuOpen(false)} className="p-2 text-slate-300 hover:text-cyan-400 hover:bg-slate-800 rounded">The Wire</Link>
+                    <Link href="/forum" onClick={() => setIsMenuOpen(false)} className="p-2 text-cyan-400 font-bold hover:text-white hover:bg-slate-800 rounded flex items-center gap-2">
                         Forum <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
                     </Link>
                 </nav>
