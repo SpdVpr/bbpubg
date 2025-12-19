@@ -10,6 +10,97 @@ export interface Post {
 
 export const posts: Post[] = [
     {
+        slug: "second-week-closed-alpha-notice",
+        title: "PUBG: Black Budget — 2nd Week Closed Alpha Test Notice",
+        excerpt: "As announced earlier, the Week 2 session of the Closed Alpha Test is scheduled to begin soon. Please review the details and updates below.",
+        date: "2025-12-19",
+        category: "Official",
+        author: "PUBG Team",
+        content: `
+            <p><strong>Hello @everyone,</strong></p>
+            <p>As announced earlier, the Week 2 session of the Closed Alpha Test is scheduled to begin soon.<br/>
+            Please review the details and updates below.</p>
+
+            <h3>Test Build Notes</h3>
+            <p>This build is an Alpha version, and various technical issues, including crashes, bugs, and other errors, may occur during gameplay.</p>
+            <ul>
+                <li>If you encounter any bugs or errors, please report them via the official Discord channel ( <strong>⁠🪲│bug-report</strong> ).</li>
+                <li>Make sure to review the minimum and recommended system requirements for a smoother experience.</li>
+            </ul>
+
+            <h3>Test Schedule</h3>
+            <ul>
+                <li><strong>Week 2:</strong> December 19, 01:00 ~ December 21, 23:59 PST</li>
+            </ul>
+            <p><em>Raids will be open until 1 hour before the session ends; after that, only the Hideout will remain available.</em></p>
+
+            <h3>Week 2 Updates</h3>
+            
+            <h4 class="text-white font-bold mt-4 mb-2">Strengthened Anti-Cheat Measures</h4>
+            <p>To prevent disruptions caused by unauthorized programs, we have implemented new security solutions and enhanced detection patterns.</p>
+            <p>These improvements were applied late last week and resulted in retroactive sanctions on a total of <strong>1,673 accounts</strong>. Additional processes have been established to enable faster and stricter responses throughout Week 2.</p>
+            <p>If you encounter a player suspected of using an unauthorized program, please report them via the official Discord channel ( <strong>⁠😡│report-a-player</strong> ) with their account name and, if possible, supporting video evidence. Your reports greatly help us respond more quickly.</p>
+
+            <h4 class="text-white font-bold mt-4 mb-2">Drops Event Closure</h4>
+            <p>Due to participation far exceeding expectations, all prepared key quantities were fully claimed, and the Drops event has been closed earlier than planned.</p>
+            <p>However, playtest access continues to be granted in waves to users who applied through the Steam Playtest Request Access. Please check your Steam Library and linked email for updates.</p>
+
+            <p>We will continue improving the experience to provide a more stable and enjoyable test environment.<br/>
+            Thank you for your continued interest and support.</p>
+
+            <hr class="border-slate-800 my-8" />
+
+            <h3>Additional Play Support Rewards</h3>
+            <p>To compensate for the inconvenience experienced during the first week, we have prepared the following rewards for Week 1 participants. Rewards can be claimed from your in-game mailbox upon logging in.</p>
+
+            <div class="grid gap-4 mt-6">
+                <div class="bg-slate-800/50 border border-slate-700 p-4 rounded-lg">
+                    <h4 class="text-yellow-400 font-bold uppercase mb-2">Stygian Money Package</h4>
+                    <ul class="space-y-1 text-slate-300 text-sm">
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> 50,000 obol</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700 p-4 rounded-lg">
+                    <h4 class="text-orange-400 font-bold uppercase mb-2">XCAL Weapon Package</h4>
+                    <ul class="space-y-1 text-slate-300 text-sm">
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> Spear 3</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> Spear 3 5.56x45 Magazine x 3</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> Spear 3 Light Stock</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> Spear 3 Modular Handguard</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> Spear 3-XC Long Barrel</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> XCal Deheater</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700 p-4 rounded-lg">
+                    <h4 class="text-cyan-400 font-bold uppercase mb-2">Gnosys Weapon Package</h4>
+                    <ul class="space-y-1 text-slate-300 text-sm">
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> AKN-32-GS</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> AKN-12 5.45x39 Drum Magazine x 1</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> AKN-12 Custom Pistol Grip</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> AKN-32-GS Heavy Stock</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> AKN-32-GS Compensator</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> Prototype Curved Foregrip</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-slate-800/50 border border-slate-700 p-4 rounded-lg">
+                    <h4 class="text-emerald-400 font-bold uppercase mb-2">Baehko Weapon Package</h4>
+                    <ul class="space-y-1 text-slate-300 text-sm">
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> RDB</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> RDB 5.56x45 Magazine x 3</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> RDB Cutlass Pistol Grip</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> RDB Heavy Stock</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> RDB Long Barrel</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> Reinforced RDB Compensator</li>
+                        <li class="flex items-center gap-2"><span class="text-cyan-400">◆</span> RDB Burst-Fire</li>
+                    </ul>
+                </div>
+            </div>
+        `
+    },
+    {
         slug: "compensation-apology-notice",
         title: "Compensation & Apology Notice regarding Test Issues",
         excerpt: "We sincerely apologize for recent authorized program issues and server instability. Compensation details inside.",
